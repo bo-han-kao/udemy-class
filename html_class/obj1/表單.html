@@ -9,19 +9,63 @@
 
 <body>
     <form action="" method="GET">
-        <label for="email">帳號:</label>
-        <input type="text" id="email" name="email" minlength="3" maxlength="50">
-        <label for="password">密碼:</label>
-        <input type="password" id="password" name="password" maxlength="10" minlength="3">
-        <label for="age">年齡:</label>
-        <input type="range" min="0" max="120" step="10">
-        <!-- <input type="number" name="age" id="age" min="1" max="150"> -->
-        <label for="email">電子信箱:</label>
-        <input type="email" id="email" name="email">
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">訂閱電子報</label>
-        <input type="file">
-        <button type="submit">登入系統</button>
+        <div>
+            <label for="email">帳號:</label>
+            <input type="text" id="email" name="email" minlength="3" maxlength="50">
+            <label for="password">密碼:</label>
+            <input type="password" id="password" name="password" maxlength="10" minlength="3">
+        </div>
+
+        <div>
+            <label for="age">年齡:</label>
+            <!-- <input type="range" min="0" max="120" step="10"> -->
+            <input type="number" name="age" id="age" min="1" max="150">
+            <label for="gender">性別:</label>
+            <!-- <input type="radio" id="male" name="gender" value="male"> -->
+            <!-- <label for="male">男性</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">女性</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">其他</label> -->
+            <select name="gender" id="gender" required>
+                <option value=""></option>
+                <option value="male">男性</option>
+                <option value="female">女性</option>
+                <option value="other">其他</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="email">電子信箱:</label>
+            <input type="email" id="email" name="email">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">訂閱電子報</label>
+        </div>
+
+        <div>
+            <input type="file">
+        </div>
+
+        <div>
+            <label for="city">地區:</label>
+            <input list="area-list" type="text" name="city" id="city">
+            <datalist id="area-list">
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="台中市">台中市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="台南市">台南市</option>
+            </datalist>
+        </div>
+
+
+        <div>
+            <button type="submit">登入系統</button>
+        </div>
+
+
+
     </form>
 </body>
 
