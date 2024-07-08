@@ -1,3 +1,11 @@
 h1 {
   color: blue;
 }
+
+.link1 a {
+  color: red;
+}
+
+.link2 a {
+  color: green;
+}
