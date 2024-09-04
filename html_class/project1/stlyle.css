@@ -18,6 +18,10 @@ p {
   padding: 0.5rem 0rem;
 }
 
+hr {
+  width: 100%;
+}
+
 header div.top {
   padding: 1rem;
   background-image: url(./images/background.png);
@@ -101,4 +105,83 @@ section.right h3 {
 
 section.right ul {
   margin-left: 2rem;
+}
+
+.ChessPlayer {
+  margin: 2rem;
+  padding: 0.5rem;
+  border: 3px solid burlywood;
+}
+
+.KoreaMain {
+  display: block !important;
+}
+
+.KoreaMain .content {
+  margin: 1rem;
+}
+
+.KoreaMain h3 {
+  font-size: 1.5rem;
+}
+
+.KoreaMain .ChessPlayer h3,
+h5 {
+  /* font-size: 1.5rem; */
+  color: rgb(6, 120, 120);
+}
+
+.KoreaMain h5 {
+  font-size: 1.05rem;
+}
+
+.KoreaMain section {
+  padding: 1rem;
+}
+
+.JapanMain {
+  padding: 1rem;
+}
+
+.JapanMain .section1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.JapanMain .img {
+  flex: 1 1 300px;
+  display: flex;
+}
+
+.JapanMain .img img {
+  width: 100%;
+}
+
+.JapanMain .section1 .content {
+  flex: 3 1 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.JapanMain .section2 {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.JapanMain .section2 h3 {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+}
+
+.JapanMain .section2 .content {
+  flex: 5 1 300px;
+  padding: 1rem;
+}
+
+.JapanMain .section2 .chart {
+  flex: 1 1 300px;
 }
