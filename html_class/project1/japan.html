@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>圍棋資訊網 | 日本棋院</title>
     <link rel="stylesheet" href="./stlyle.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -65,12 +66,48 @@
             </div>
 
             <div class="chart">
-
+                <div id="chart_div"></div>
             </div>
 
         </section>
     </main>
+    <script type="text/javascript">
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', { 'packages': ['corechart'] });
 
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        function drawChart() {
+            // Create the data table.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([
+                ['棋聖', 4500],
+                ['十段', 700],
+                ['本因坊', 2800],
+                ['碁聖', 800],
+                ['名人', 3000],
+                ['王座', 1400],
+                ['天元', 1300]
+            ]);
+
+            // Set chart options
+            var options = {
+                'title': '日本七大棋戰獎金分布圓餅圖',
+                'width': 400,
+                'height': 300
+            };
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
 </body>
 
 </html>

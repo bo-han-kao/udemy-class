@@ -185,3 +185,10 @@ h5 {
 .JapanMain .section2 .chart {
   flex: 1 1 300px;
 }
+
+.ChinaMain section h3 {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+  margin: 0px;
+  padding: 0px;
+}
