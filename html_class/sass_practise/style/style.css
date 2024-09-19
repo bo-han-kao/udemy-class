@@ -6,4 +6,17 @@
 
 h1 {
   background-color: aquamarine;
+  color: red;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  color: red;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
