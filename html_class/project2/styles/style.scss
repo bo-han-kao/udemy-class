@@ -32,6 +32,11 @@ header {
   background-color: white;
   flex-wrap: wrap;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 10px 6px -6px #777;
   section.logo {
     display: flex;
     flex: 2 1 400px;
@@ -194,4 +199,24 @@ footer {
       flex-direction: column;
     }
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $themeColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(152, 57, 255);
 }
