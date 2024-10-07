@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: white;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style: none;
+}
+body nav ul li a {
+  text-decoration: none;
+  margin: 1rem;
+  color: black;
+  transition: color 0.5s ease;
+}
+body nav ul li a:hover {
+  color: greenyellow;
+}
+body main .main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+}
+body main .main-area .info button {
+  background-color: rgb(44, 185, 44);
+  color: white;
+  border-radius: 15%;
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

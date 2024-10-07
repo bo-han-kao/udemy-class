@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  nav {
+    background-color: white;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          margin: 1rem;
+          color: black;
+          transition: color 0.5s ease;
+          &:hover {
+            color: greenyellow;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .main-area {
+      min-height: 70vh;
+      background-color: white;
+      display: flex;
+      .info {
+        button {
+          background-color: rgb(44, 185, 44);
+          color: white;
+          border-radius: 15%;
+          margin-left: 1rem;
+          font-size: 1rem;
+          padding: 0.2rem;
+          border: none;
+        }
+      }
+    }
+  }
+}
