@@ -73,5 +73,25 @@ body {
         }
       }
     }
+    .about-me {
+      .description {
+        // background-color: rgb(187, 236, 113);
+        width: 50vw;
+        text-align: center;
+        h2 {
+          font-size: 2rem;
+        }
+        .progress-bar-area {
+          p {
+            padding-top: 1rem;
+          }
+        }
+      }
+      background-color: rgb(196, 255, 108);
+      padding: 5rem 0rem;
+      display: flex;
+      // flex-direction: column;
+      justify-content: center;
+    }
   }
 }

@@ -67,4 +67,20 @@ body main .main-area .info .img-area {
 }
 body main .main-area .info .img-area img {
   width: 100%;
+}
+body main .about-me {
+  background-color: rgb(196, 255, 108);
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+body main .about-me .description {
+  width: 50vw;
+  text-align: center;
+}
+body main .about-me .description h2 {
+  font-size: 2rem;
+}
+body main .about-me .description .progress-bar-area p {
+  padding-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
