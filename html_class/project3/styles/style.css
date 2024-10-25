@@ -13,8 +13,14 @@ h6 {
   font-weight: normal;
 }
 
+body {
+  overflow-x: hidden;
+}
 body nav {
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 body nav ul {
   display: flex;
@@ -62,11 +68,14 @@ body main .main-area .info button a {
 body main .main-area .info button:hover {
   transform: scale(1.2);
 }
-body main .main-area .info .img-area {
+body main .main-area .img-area {
   flex-basis: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-body main .main-area .info .img-area img {
-  width: 100%;
+body main .main-area .img-area img {
+  width: 95%;
 }
 body main .about-me {
   background-color: rgb(196, 255, 108);
@@ -83,4 +92,83 @@ body main .about-me .description h2 {
 }
 body main .about-me .description .progress-bar-area p {
   padding-top: 1rem;
+}
+body main .resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+body main .resume .table {
+  padding: 2rem;
+  flex: 5 1 500px;
+}
+body main .resume .table table {
+  --bs-table-bg: none;
+  border-collapse: collapse;
+}
+body main .resume .table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.5s ease;
+}
+body main .resume .table table tr:hover {
+  background-color: rgb(212, 241, 167);
+}
+body main .resume .table table tr td {
+  padding: 1rem;
+}
+body main .resume .picture {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main .resume .picture img {
+  width: 80%;
+}
+body main .resume .picture .greenrect1 {
+  border: 10px solid rgb(212, 241, 167);
+  width: 30vw;
+  height: 80vh;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+body main .resume .picture .greenrect2 {
+  border: 10px solid rgb(212, 241, 167);
+  width: 50vw;
+  height: 40vh;
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  z-index: -1;
+}
+body main .resume .picture .greenrect3 {
+  border: 10px solid rgb(212, 241, 167);
+  width: 50vw;
+  height: 40vh;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  body main .about-me .description {
+    width: 80%;
+  }
+  body main .resume .picture .greenrect1,
+  body main .resume .picture .greenrect2,
+  body main .resume .picture .greenrect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

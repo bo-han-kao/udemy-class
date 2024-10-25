@@ -14,8 +14,12 @@ h6 {
 }
 
 body {
+  overflow-x: hidden;
   nav {
     background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     ul {
       display: flex;
       li {
@@ -65,11 +69,14 @@ body {
             transform: scale(1.2);
           }
         }
-        .img-area {
-          flex-basis: 450px;
-          img {
-            width: 100%;
-          }
+      }
+      .img-area {
+        flex-basis: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 95%;
         }
       }
     }
@@ -92,6 +99,103 @@ body {
       display: flex;
       // flex-direction: column;
       justify-content: center;
+    }
+    .resume {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      // justify-content: center;
+      // align-items: center;
+      .table {
+        padding: 2rem;
+        flex: 5 1 500px;
+        table {
+          --bs-table-bg: none;
+          border-collapse: collapse;
+          tr {
+            border-bottom: 2px solid gray;
+            transition: all 0.5s ease;
+            &:hover {
+              background-color: rgb(212, 241, 167);
+            }
+            td {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+      .picture {
+        flex: 1 1 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+          width: 80%;
+        }
+        .greenrect1 {
+          border: 10px solid rgb(212, 241, 167);
+          width: 30vw;
+          height: 80vh;
+          position: absolute;
+          top: 30px;
+          left: 80px;
+          z-index: -1;
+        }
+        .greenrect2 {
+          border: 10px solid rgb(212, 241, 167);
+          width: 50vw;
+          height: 40vh;
+          position: absolute;
+          top: 300px;
+          left: -300px;
+          z-index: -1;
+        }
+        .greenrect3 {
+          border: 10px solid rgb(212, 241, 167);
+          width: 50vw;
+          height: 40vh;
+          position: absolute;
+          top: 0px;
+          left: -100px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+      .about-me {
+        .description {
+          width: 80%;
+        }
+      }
+
+      .resume {
+        .table {
+        }
+        .picture {
+          .greenrect1,
+          .greenrect2,
+          .greenrect3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      position: static;
+      ul {
+        flex-direction: column;
+      }
     }
   }
 }
